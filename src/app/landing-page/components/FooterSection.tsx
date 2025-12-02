@@ -42,9 +42,7 @@ const FooterSection = ({ className = '' }: FooterSectionProps) => {
     {
       title: "Company",
       links: [
-        { label: "About Us", href: "/about" },
-        { label: "Pricing", href: "/pricing-plans" },
-        { label: "Testimonials", href: "/testimonials" },
+        { label: "About Us", href: "/about-us" },
         { label: "Blog", href: "/blog" },
         { label: "FAQ", href: "/faq" }
       ]
@@ -52,8 +50,13 @@ const FooterSection = ({ className = '' }: FooterSectionProps) => {
     {
       title: "Support",
       links: [
-        { label: "Help Center", href: "/dashboard/support" },
-        { label: "Contact Us", href: "/dashboard/support" },
+        { label: "Help Center", href: "/help-center" },
+        { label: "Contact Us", href: "/contact" }
+      ]
+    },
+    {
+      title: "Legal",
+      links: [
         { label: "Privacy Policy", href: "/legal/privacy" },
         { label: "Terms of Service", href: "/legal/terms" },
         { label: "Refund Policy", href: "/legal/refund" }

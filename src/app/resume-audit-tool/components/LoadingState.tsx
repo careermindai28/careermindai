@@ -18,7 +18,7 @@ const LoadingState = ({ isVisible }: LoadingStateProps) => {
     'Assessing formatting standards...',
     'Comparing with job requirements...',
     'Generating improvement suggestions...',
-    'Finalizing your ResumeMind Score...',
+    'Finalizing your ResumeMind Score™...',
   ];
 
   useEffect(() => {

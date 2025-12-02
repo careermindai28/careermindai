@@ -59,7 +59,9 @@ export default function ResumeMindScore({ overallScore, breakdown }: ResumeMindS
 
   return (
     <div className="bg-card rounded-xl shadow-card border border-border p-6">
-      <h2 className="text-xl font-semibold text-foreground mb-6">ResumeMind Score</h2>
+      <h2 className="text-xl font-semibold text-foreground mb-6">
+        ResumeMind Score<sup>TM</sup>
+      </h2>
       
       <div className="flex flex-col lg:flex-row items-center gap-8">
         <div className="relative w-48 h-48 flex-shrink-0">
@@ -119,7 +121,7 @@ export default function ResumeMindScore({ overallScore, breakdown }: ResumeMindS
 
       <div className="mt-6 p-4 bg-muted rounded-lg">
         <p className="text-sm text-text-secondary">
-          Your ResumeMind Score reflects how well your resume performs against ATS systems and hiring standards. 
+          Your ResumeMind Score<sup>TM</sup> reflects how well your resume performs against ATS systems and hiring standards. 
           Scores above 80 indicate excellent optimization for job applications.
         </p>
       </div>

@@ -104,7 +104,9 @@ const AuditResults = ({ results, onExportPDF, onStartOver }: AuditResultsProps) 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className={`p-6 rounded-xl ${getScoreBackground(results.resumeMindScore)} border border-border`}>
           <div className="flex items-center justify-between mb-4">
-            <h3 className="text-lg font-semibold text-foreground">ResumeMind Score</h3>
+            <h3 className="text-lg font-semibold text-foreground">
+              ResumeMind Score<sup>TM</sup>
+            </h3>
             <Icon name="ChartBarIcon" size={24} className={getScoreColor(results.resumeMindScore)} />
           </div>
           <div className="flex items-end space-x-2">

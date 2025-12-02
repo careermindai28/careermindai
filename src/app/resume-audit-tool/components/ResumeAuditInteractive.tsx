@@ -249,7 +249,7 @@ const ResumeAuditInteractive = () => {
                 </div>
                 <div>
                   <h2 className="text-xl font-semibold text-foreground mb-2">
-                    Get Your ResumeMind Score
+                    Get Your ResumeMind Score<sup>TM</sup>
                   </h2>
                   <p className="text-sm text-text-secondary">
                     Upload your resume and job description to receive a comprehensive AI-powered
@@ -306,7 +306,7 @@ const ResumeAuditInteractive = () => {
                   <ul className="space-y-1.5 text-sm text-text-secondary">
                     <li className="flex items-start space-x-2">
                       <span className="text-accent mt-1">•</span>
-                      <span>Comprehensive ResumeMind Score (0-100) based on industry standards</span>
+                      <span>Comprehensive ResumeMind Score<sup>TM</sup> (0-100) based on industry standards</span>
                     </li>
                     <li className="flex items-start space-x-2">
                       <span className="text-accent mt-1">•</span>

@@ -7,12 +7,11 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: 'Next.js with Tailwind CSS',
-  description: 'A boilerplate project with Next.js and Tailwind CSS',
+  title: 'CareerMindAI – AI Resumes, Cover Letters & Interview Prep',
+  description:
+    'CareerMindAI uses the ResumeMind Score™ engine to audit your resume, generate ATS-optimized resumes and cover letters, and prepare you for interviews – tailored for Indian and global job markets.',
   icons: {
-    icon: [
-      { url: '/favicon.ico', type: 'image/x-icon' }
-    ],
+    icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
   },
 };
 

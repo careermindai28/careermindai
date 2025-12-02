@@ -25,7 +25,7 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
                 <span className="text-accent font-semibold text-sm">AI-Powered Career Tools</span>
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-                Beat ATS Systems with <span className="text-primary">ResumeMind</span> Score
+                Beat ATS Systems with <span className="text-primary">ResumeMind Score</span><sup>TM</sup>
               </h1>
               <p className="text-lg sm:text-xl text-text-secondary mb-8 max-w-2xl mx-auto lg:mx-0">
                 Get instant AI-powered resume audits, build ATS-optimized resumes, and ace your interviews with personalized preparation tools designed for Indian and global job markets.
@@ -57,7 +57,9 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div>
                           <div className="text-5xl font-bold text-primary">85</div>
-                          <div className="text-sm text-text-secondary">ResumeMind Score</div>
+                          <div className="text-sm text-text-secondary">
+  ResumeMind Score<sup>TM</sup>
+</div>
                         </div>
                       </div>
                     </div>
@@ -94,7 +96,7 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
               <span className="text-accent font-semibold text-sm">AI-Powered Career Tools</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Beat ATS Systems with <span className="text-primary">ResumeMind</span> Score
+              Beat ATS Systems with <span className="text-primary">ResumeMind Score</span><sup>TM</sup>
             </h1>
             <p className="text-lg sm:text-xl text-text-secondary mb-8 max-w-2xl mx-auto lg:mx-0">
               Get instant AI-powered resume audits, build ATS-optimized resumes, and ace your interviews with personalized preparation tools designed for Indian and global job markets.
@@ -126,7 +128,9 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div>
                         <div className="text-5xl font-bold text-primary">85</div>
-                        <div className="text-sm text-text-secondary">ResumeMind Score</div>
+                        <div className="text-sm text-text-secondary">
+  ResumeMind Score<sup>TM</sup>
+</div>
                       </div>
                     </div>
                   </div>

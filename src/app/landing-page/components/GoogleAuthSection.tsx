@@ -99,7 +99,7 @@ const GoogleAuthSection = ({ className = '' }: GoogleAuthSectionProps) => {
                 Terms of Service
               </Link>
               {' '}and{' '}
-              <Link href="/legal/privacy" className="text-primary hover:underline">
+              <Link href="/privacy-policy" className="text-primary hover:underline">
                 Privacy Policy
               </Link>
             </label>

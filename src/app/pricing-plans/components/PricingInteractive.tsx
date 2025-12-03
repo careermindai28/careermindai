@@ -93,7 +93,7 @@ const PricingInteractive = () => {
   },
   {
     name: 'Starter',
-    price: 999,
+    price: 499,
     period: 'month',
     description: 'Ideal for active job seekers who need comprehensive tools',
     features: [
@@ -114,7 +114,7 @@ const PricingInteractive = () => {
   },
   {
     name: 'Pro',
-    price: 1999,
+    price: 999,
     period: 'month',
     description: 'For professionals seeking maximum career advancement',
     features: [

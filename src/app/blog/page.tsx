@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import PublicHeader from '@/components/common/PublicHeader';
 import FooterSection from '@/app/landing-page/components/FooterSection';
 import Icon from '@/components/ui/AppIcon';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'CareerMindAI Blog – Resumes, Interviews, Careers',
@@ -157,14 +158,14 @@ export default function BlogPage() {
 
         {/* Blog Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogPosts.map((post, index) =>
-          <article key={index} className="bg-surface border border-border rounded-lg overflow-hidden hover:shadow-elevation transition-shadow duration-200">
+          {blogPosts.map((post, index) => (
+            <article key={index} className="bg-surface border border-border rounded-lg overflow-hidden hover:shadow-elevation transition-shadow duration-200">
               <div className="aspect-video bg-muted relative">
                 <img
-                src={post.image}
-                alt={post.alt}
-                className="w-full h-full object-cover" />
-
+                  src={post.image}
+                  alt={post.alt}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-6">
                 <div className="mb-3">
@@ -185,13 +186,16 @@ export default function BlogPage() {
                 </div>
                 <div className="flex items-center justify-between pt-4 border-t border-border">
                   <span className="text-sm text-text-secondary">{post.author}</span>
-                  <button className="text-primary hover:text-primary/80 font-medium text-sm transition-colors duration-150">
+                  <Link
+                    href={`/blog/${post.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}
+                    className="text-primary hover:text-primary/80 font-medium text-sm transition-colors duration-150"
+                  >
                     Read More →
-                  </button>
+                  </Link>
                 </div>
               </div>
             </article>
-          )}
+          ))}
         </div>
 
         {/* Newsletter Signup */}

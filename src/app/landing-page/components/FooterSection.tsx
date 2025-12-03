@@ -57,7 +57,7 @@ const FooterSection = ({ className = '' }: FooterSectionProps) => {
     {
       title: "Legal",
       links: [
-        { label: "Privacy Policy", href: "/legal/privacy" },
+        { label: "Privacy Policy", href: "/privacy-policy" },
         { label: "Terms of Service", href: "/legal/terms" },
         { label: "Refund Policy", href: "/legal/refund" }
       ]

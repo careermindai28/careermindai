@@ -247,7 +247,7 @@ const HelpCenterPage: React.FC = () => {
             <p className="text-gray-700 mb-6">
               Can't find what you're looking for? Our support team is ready to assist you.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link
                 href="/faq"
                 className="inline-flex items-center justify-center px-6 py-3 bg-white text-blue-600 rounded-lg font-medium hover:bg-gray-50 transition-colors border border-blue-200"
@@ -267,6 +267,15 @@ const HelpCenterPage: React.FC = () => {
                 Contact Support
               </Link>
             </div>
+            <Link
+              href="/user-dashboard"
+              className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-150 shadow-md hover:shadow-lg"
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+              </svg>
+              Back to Dashboard
+            </Link>
           </div>
         </div>
       </div>

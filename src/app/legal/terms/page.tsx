@@ -96,6 +96,14 @@ export default function TermsOfServicePage() {
                   <li>You must not use our service to generate content that is discriminatory, offensive, or illegal</li>
                   <li>You must not share your account with others or create multiple accounts to circumvent usage limits</li>
                 </ul>
+                <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-md">
+                  <p className="font-semibold text-blue-800 mb-2">🔒 Sensitive Data Notice</p>
+                  <p className="text-sm">
+                    <strong>CareerMindAI does not request or store government identity numbers such as PAN, Aadhaar, 
+                    passport, or driving licence details.</strong> If you include such information in your uploaded 
+                    documents, we strongly recommend removing it to protect your privacy.
+                  </p>
+                </div>
                 <p className="mt-4 p-4 bg-yellow-50 border border-yellow-200 rounded-md">
                   <strong className="text-yellow-800">⚠️ Important:</strong> We reserve the right to suspend or terminate 
                   accounts that violate these terms without prior notice or refund.
@@ -359,7 +367,7 @@ export default function TermsOfServicePage() {
             <h3 className="text-lg font-semibold text-foreground mb-4">Related Legal Documents</h3>
             <div className="flex flex-wrap gap-4">
               <Link 
-                href="/legal/privacy" 
+                href="/privacy-policy" 
                 className="text-primary hover:underline flex items-center gap-2"
               >
                 <span>→</span> Privacy Policy

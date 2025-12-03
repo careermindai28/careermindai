@@ -11,6 +11,7 @@ import Icon from '@/components/ui/AppIcon';
 interface FormErrors {
   file: string;
   jobDescription: string;
+  jobDescriptionFile: string;
   targetRole: string;
   companyName: string;
 }
@@ -44,6 +45,7 @@ const ResumeAuditInteractive = () => {
   const [isHydrated, setIsHydrated] = useState(false);
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [jobDescription, setJobDescription] = useState('');
+  const [jobDescriptionFile, setJobDescriptionFile] = useState<File | null>(null);
   const [targetRole, setTargetRole] = useState('');
   const [companyName, setCompanyName] = useState('');
   const [region, setRegion] = useState('india');
@@ -51,6 +53,7 @@ const ResumeAuditInteractive = () => {
   const [errors, setErrors] = useState<FormErrors>({
     file: '',
     jobDescription: '',
+    jobDescriptionFile: '',
     targetRole: '',
     companyName: '',
   });
@@ -65,6 +68,7 @@ const ResumeAuditInteractive = () => {
     const newErrors: FormErrors = {
       file: '',
       jobDescription: '',
+      jobDescriptionFile: '',
       targetRole: '',
       companyName: '',
     };
@@ -73,11 +77,7 @@ const ResumeAuditInteractive = () => {
       newErrors.file = 'Please upload your resume';
     }
 
-    if (!jobDescription.trim()) {
-      newErrors.jobDescription = 'Job description is required';
-    } else if (jobDescription.trim().length < 100) {
-      newErrors.jobDescription = 'Job description should be at least 100 characters';
-    }
+    // Job description is now optional - no validation required
 
     if (!targetRole.trim()) {
       newErrors.targetRole = 'Target role is required';
@@ -208,6 +208,7 @@ const ResumeAuditInteractive = () => {
   const handleStartOver = () => {
     setSelectedFile(null);
     setJobDescription('');
+    setJobDescriptionFile(null);
     setTargetRole('');
     setCompanyName('');
     setRegion('india');
@@ -215,6 +216,7 @@ const ResumeAuditInteractive = () => {
     setErrors({
       file: '',
       jobDescription: '',
+      jobDescriptionFile: '',
       targetRole: '',
       companyName: '',
     });
@@ -269,6 +271,8 @@ const ResumeAuditInteractive = () => {
               <JobDescriptionInput
                 value={jobDescription}
                 onChange={setJobDescription}
+                onFileSelect={setJobDescriptionFile}
+                selectedFile={jobDescriptionFile}
                 error={errors.jobDescription}
               />
 

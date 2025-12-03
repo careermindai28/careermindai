@@ -51,6 +51,14 @@ export default function RefundPolicyPage() {
                   As a digital subscription service providing immediate access to AI-powered tools, content generation, 
                   and career resources, refunds are subject to the conditions outlined in this policy.
                 </p>
+                <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-md">
+                  <p className="font-semibold text-blue-800 mb-2">🔒 Data Privacy Note</p>
+                  <p className="text-sm">
+                    <strong>CareerMindAI does not request or store government identity numbers such as PAN, Aadhaar, 
+                    passport, or driving licence details.</strong> All payment processing is handled through secure 
+                    third-party providers who comply with industry security standards.
+                  </p>
+                </div>
               </div>
             </section>
 
@@ -509,7 +517,7 @@ export default function RefundPolicyPage() {
                 <span>→</span> Terms of Service
               </Link>
               <Link 
-                href="/legal/privacy" 
+                href="/privacy-policy" 
                 className="text-primary hover:underline flex items-center gap-2"
               >
                 <span>→</span> Privacy Policy

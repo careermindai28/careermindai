@@ -85,7 +85,7 @@ const SettingsInteractive = () => {
     {
       id: '1',
       date: '01/11/2025',
-      amount: '₹999',
+      amount: '₹499',
       plan: 'Starter Plan',
       status: 'paid',
       invoiceUrl: '#'
@@ -93,7 +93,7 @@ const SettingsInteractive = () => {
     {
       id: '2',
       date: '01/10/2025',
-      amount: '₹999',
+      amount: '₹499',
       plan: 'Starter Plan',
       status: 'paid',
       invoiceUrl: '#'
@@ -101,7 +101,7 @@ const SettingsInteractive = () => {
     {
       id: '3',
       date: '01/09/2025',
-      amount: '₹999',
+      amount: '₹499',
       plan: 'Starter Plan',
       status: 'paid',
       invoiceUrl: '#'

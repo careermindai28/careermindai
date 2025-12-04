@@ -1,27 +1,26 @@
-import type { Metadata } from 'next';
+'use client';
+
 import DashboardSidebar from '@/components/common/DashboardSidebar';
 import Breadcrumb from '@/components/common/Breadcrumb';
 import LinkedInOptimizationInteractive from './components/LinkedInOptimizationInteractive';
-
-export const metadata: Metadata = {
-  title: 'LinkedIn Optimization - CareerMindAI',
-  description: 'Enhance your LinkedIn profile with AI-generated headlines and summaries tailored to your career goals and industry standards for maximum professional impact.',
-};
+import ProtectedPage from '@/components/auth/ProtectedPage';
 
 export default function LinkedInOptimizationPage() {
   return (
-    <div className="flex min-h-screen bg-background">
-      <DashboardSidebar />
-      
-      <main className="flex-1 lg:ml-72">
-        <div className="border-b border-border bg-surface sticky top-0 z-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <Breadcrumb />
-          </div>
-        </div>
+    <ProtectedPage>
+      <div className="flex min-h-screen bg-background">
+        <DashboardSidebar />
         
-        <LinkedInOptimizationInteractive />
-      </main>
-    </div>
+        <main className="flex-1 lg:ml-72">
+          <div className="border-b border-border bg-surface sticky top-0 z-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+              <Breadcrumb />
+            </div>
+          </div>
+          
+          <LinkedInOptimizationInteractive />
+        </main>
+      </div>
+    </ProtectedPage>
   );
 }

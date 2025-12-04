@@ -1,27 +1,26 @@
-import type { Metadata } from 'next';
+'use client';
+
 import DashboardSidebar from '@/components/common/DashboardSidebar';
 import Breadcrumb from '@/components/common/Breadcrumb';
 import InterviewPreparationInteractive from './components/InterviewPreparationInteractive';
-
-export const metadata: Metadata = {
-  title: 'Interview Preparation - CareerMindAI',
-  description: 'Practice with AI-generated interview questions tailored to your target role. Prepare for HR, behavioral, technical, and STAR method questions with structured answer frameworks and practice tools.',
-};
+import ProtectedPage from '@/components/auth/ProtectedPage';
 
 export default function InterviewPreparationPage() {
   return (
-    <div className="min-h-screen bg-background flex">
-      <DashboardSidebar />
-      
-      <main className="flex-1 lg:ml-72">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="mb-6">
-            <Breadcrumb />
+    <ProtectedPage>
+      <div className="min-h-screen bg-background flex">
+        <DashboardSidebar />
+        
+        <main className="flex-1 lg:ml-72">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div className="mb-6">
+              <Breadcrumb />
+            </div>
+            
+            <InterviewPreparationInteractive />
           </div>
-          
-          <InterviewPreparationInteractive />
-        </div>
-      </main>
-    </div>
+        </main>
+      </div>
+    </ProtectedPage>
   );
 }

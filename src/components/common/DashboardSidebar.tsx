@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Icon from '@/components/ui/AppIcon';
+import LogoutButton from '@/components/auth/LogoutButton';
 
 interface DashboardSidebarProps {
   isCollapsed?: boolean;
@@ -189,7 +190,7 @@ const DashboardSidebar = ({ isCollapsed = false, className = '' }: DashboardSide
       </nav>
 
       <div className="p-4 border-t border-border">
-        <div className={`flex items-center ${collapsed ? 'justify-center' : 'space-x-3'}`}>
+        <div className={`flex items-center ${collapsed ? 'justify-center' : 'space-x-3'} mb-3`}>
           <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
             <span className="text-primary-foreground font-semibold">U</span>
           </div>
@@ -200,6 +201,11 @@ const DashboardSidebar = ({ isCollapsed = false, className = '' }: DashboardSide
             </div>
           )}
         </div>
+        {!collapsed && (
+          <div className="flex justify-center">
+            <LogoutButton />
+          </div>
+        )}
       </div>
     </div>
   );

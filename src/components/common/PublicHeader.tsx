@@ -61,13 +61,13 @@ const PublicHeader = ({ className = '' }: PublicHeaderProps) => {
 
           <div className="hidden md:flex items-center space-x-4">
             <Link
-              href="/user-dashboard"
+              href="/landing-page#get-started"
               className="text-text-secondary hover:text-foreground transition-colors duration-150 font-medium"
             >
               Login
             </Link>
             <Link
-              href="/user-dashboard"
+              href="/landing-page#get-started"
               className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-2 rounded-lg font-medium transition-all duration-150 shadow-card hover:shadow-elevation"
             >
               Get Started
@@ -103,14 +103,14 @@ const PublicHeader = ({ className = '' }: PublicHeaderProps) => {
             ))}
             <div className="pt-3 border-t border-border space-y-3">
               <Link
-                href="/user-dashboard"
+                href="/landing-page#get-started"
                 className="block py-2 text-text-secondary hover:text-foreground transition-colors duration-150 font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Login
               </Link>
               <Link
-                href="/user-dashboard"
+                href="/landing-page#get-started"
                 className="block bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-2 rounded-lg font-medium text-center transition-all duration-150"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
